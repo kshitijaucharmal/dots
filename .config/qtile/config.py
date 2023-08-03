@@ -11,11 +11,11 @@ mod = "mod4"
 browser = "brave"
 browser_private = "brave --incognito"
 browser_tor = "brave --tor"
-file_manager = "alacritty -e lf"
+file_manager = "kitty -e lf"
 wallpaper_manager = "kitty -e ranger"
-terminal = "alacritty"
-terminal2 = "alacritty --config-file=/home/kshitij/.config/alacritty/alacritty-nontmux.yml"
-monitor = "alacritty -e bpytop"
+terminal = "kitty"
+terminal2 = "kitty --config-file=/home/kshitij/.config/kitty/kitty-nontmux.yml"
+monitor = "kitty -e bpytop"
 notetaker = "/home/kshitij/.scripts/note-taker"
 notetopdf = "/home/kshitij/.scripts/note-to-pdf"
 launcher = "/home/kshitij/.config/rofi/scripts/launcher_t3 -show-icons -show drun -display-drun Search -font \"Robaga Rounded 11\""
@@ -78,7 +78,7 @@ keys = [
     EK("M-C-S-f", lazy.spawn(browser_tor)),
     EK("M-s", lazy.spawn("/home/kshitij/.scripts/scripter")),
     EK("M-h", lazy.spawn(monitor)),
-    EK("M-i", lazy.spawn("alacritty -e /home/kshitij/.scripts/cht.sh")),
+    EK("M-i", lazy.spawn("kitty -e /home/kshitij/.scripts/cht.sh")),
 
     # Music Shortcuts MPD
     # EK("M-S-m", lazy.spawn("mpc toggle")),
