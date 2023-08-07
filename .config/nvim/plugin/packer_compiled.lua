@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/Colorizer",
     url = "https://github.com/chrisbra/Colorizer"
   },
+  LuaSnip = {
+    loaded = true,
+    path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
   ["asyncrun.vim"] = {
     loaded = true,
     path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/asyncrun.vim",
@@ -89,26 +94,41 @@ _G.packer_plugins = {
     path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/ayu-vim",
     url = "https://github.com/ayu-theme/ayu-vim"
   },
-  backtothefuture = {
-    loaded = true,
-    path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/backtothefuture",
-    url = "https://github.com/benjaminjamesxyz/backtothefuture"
-  },
   catppuccin = {
     config = { "\27LJ\2\nd\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\16term_colors\2\27transparent_background\2\nsetup\15catppuccin\frequire\0" },
     loaded = true,
     path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/catppuccin",
     url = "https://github.com/catppuccin/nvim"
   },
+  ["cmp-buffer"] = {
+    loaded = true,
+    path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
   dracula = {
     loaded = true,
     path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/dracula",
     url = "https://github.com/dracula/vim"
-  },
-  ["everblush.vim"] = {
-    loaded = true,
-    path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/everblush.vim",
-    url = "https://github.com/mangeshrex/everblush.vim"
   },
   everforest = {
     loaded = true,
@@ -156,6 +176,16 @@ _G.packer_plugins = {
     path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
   ["material.nvim"] = {
     loaded = true,
     path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/material.nvim",
@@ -185,6 +215,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/nordic.nvim",
     url = "https://github.com/AlexvZyl/nordic.nvim"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/home/kshitij/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-dap"] = {
     loaded = true,
@@ -318,14 +353,14 @@ time([[Defining packer_plugins]], false)
 time([[Runtimepath customization]], true)
 vim.o.runtimepath = vim.o.runtimepath .. ",/home/kshitij/.local/share/nvim/site/pack/packer/start/fzf/~/.fzf"
 time([[Runtimepath customization]], false)
--- Config for: catppuccin
-time([[Config for catppuccin]], true)
-try_loadstring("\27LJ\2\nd\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\16term_colors\2\27transparent_background\2\nsetup\15catppuccin\frequire\0", "config", "catppuccin")
-time([[Config for catppuccin]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
+-- Config for: catppuccin
+time([[Config for catppuccin]], true)
+try_loadstring("\27LJ\2\nd\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\16term_colors\2\27transparent_background\2\nsetup\15catppuccin\frequire\0", "config", "catppuccin")
+time([[Config for catppuccin]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
