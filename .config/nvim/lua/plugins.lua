@@ -32,24 +32,26 @@ return require('packer').startup(function(use)
     use { 'mbbill/undotree' }
     use { 'tpope/vim-surround' }
     use { 'patriciogonzalezvivo/vim-glslViewer' }
-    -- LSP
-    use { 
-        'neovim/nvim-lspconfig',
-        "williamboman/mason.nvim",
-        "williamboman/mason-lspconfig.nvim",
-    }
-    -- CMP
-    use { 'hrsh7th/cmp-nvim-lsp',
-        'hrsh7th/cmp-buffer',
-        'hrsh7th/cmp-path',
-        'hrsh7th/cmp-cmdline',
-        'hrsh7th/nvim-cmp' 
-    }
-    -- Luasnip
-    use { 
-        'L3MON4D3/LuaSnip',
-        'saadparwaiz1/cmp_luasnip'
-    }
+    use { 'neoclide/coc.nvim', branch = 'release' }
+
+    ---- LSP
+    --use { 
+        --'neovim/nvim-lspconfig',
+        --"williamboman/mason.nvim",
+        --"williamboman/mason-lspconfig.nvim",
+    --}
+    ---- CMP
+    --use { 'hrsh7th/cmp-nvim-lsp',
+        --'hrsh7th/cmp-buffer',
+        --'hrsh7th/cmp-path',
+        --'hrsh7th/cmp-cmdline',
+        --'hrsh7th/nvim-cmp' 
+    --}
+    ---- Luasnip
+    --use { 
+        --'L3MON4D3/LuaSnip',
+        --'saadparwaiz1/cmp_luasnip'
+    --}
 
     -- Themes }
     use { "catppuccin/nvim", as = "catppuccin",

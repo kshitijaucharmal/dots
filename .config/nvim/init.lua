@@ -2,8 +2,8 @@
 -- Plugins
 require('plugins')
 
--- Lsp
-require('lsp')
+-- Silicon
+-- require('silicon')
 
 -- Options
 require('options')

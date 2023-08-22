@@ -19,7 +19,7 @@ vim.opt.foldmarker = "{,}"
 vim.opt.ic = true
 vim.opt.spell = true
 vim.opt.spelllang = "en_us"
-vim.opt.mouse = ""
+vim.opt.mouse = "a"
 
 vim.cmd([[
     set nohlsearch
