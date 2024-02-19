@@ -239,8 +239,8 @@ alias upd="/usr/bin/update"
 alias ls='exa'
 alias ll='exa -l'
 alias nv='nvim'
-alias ec='nvim $(fd . ~/.config --type f --max-depth 6 --exclude unity3d --exclude unityhub | fzf -i)'
-alias es='nvim $(fd . ~/.scripts --type f --max-depth 3 --exclude unity3d --exclude unityhub | fzf -i)'
+alias ec='nvim $(fd . ~/.config --type f --type l --max-depth 6 --exclude unity3d --exclude unityhub | fzf -i)'
+alias es='nvim $(fd . ~/.scripts --type f --type l --max-depth 3 --exclude unity3d --exclude unityhub | fzf -i)'
 alias op='. ~/.scripts/open-project'
 alias or='. ~/.scripts/open-repo'
 alias img='sxiv'
@@ -249,6 +249,7 @@ alias rgb='~/repos/backlight/facer_rgb.py'
 alias vim='nvim'
 alias nv='nvim'
 alias v='LOCALE=en_US-UTF-8 neovide'
+alias tp='. ~/.scripts/templater.sh'
 # 
 # alias cd='z'
 
