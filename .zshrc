@@ -260,3 +260,4 @@ alias qq='nvim $(find ~/.config/nvim/lua/custom -maxdepth 3 -type f | fzf)'
 
 # Pokemon 
 pokemon-colorscripts -r 1 --no-title
+fortune
