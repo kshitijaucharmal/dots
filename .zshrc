@@ -251,7 +251,7 @@ alias nv='nvim'
 alias v='LOCALE=en_US-UTF-8 neovide'
 alias tp='. ~/.scripts/templater.sh'
 # 
-# alias cd='z'
+alias cd='z'
 
 alias qq='nvim $(find ~/.config/nvim/lua/custom -maxdepth 3 -type f | fzf)'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
