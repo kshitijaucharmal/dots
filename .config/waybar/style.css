@@ -1,0 +1,107 @@
+@import "mocha.css";
+
+* {
+  font-family: RobagaRounded, "FiraCode Nerd Font";
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+#workspaces {
+  background-color: @surface0;
+  margin-top: 1rem;
+  margin: 10px 3px 0px 10px;
+  border-radius: 1rem;
+  border-color: @pink;
+  border: 2px solid @surface2;
+}
+
+#workspaces button {
+  color: @mauve;
+  padding-left: 10px;
+  margin: 2px 0;
+  transition: all 0.1s cubic-bezier(.55,-0.68,.48,1.68);
+  background-color: transparent;
+}
+
+#workspaces button.active {
+  color: @red;
+  background-color: @surface1;
+  transition: all 0.1s cubic-bezier(.55,-0.68,.48,1.68);
+}
+
+#workspaces button:hover {
+  color: @rosewater;
+  border-radius: 1rem;
+}
+
+#idle_inhibitor,
+#tray,
+#network,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#custom-lock,
+#memory,
+#custom-power {
+  background-color: @surface0;
+  margin: 10px 10px 0px 2px;
+  padding: 3px 10px 3px 10px;
+  border-radius: 0.7rem;
+  border: 2px solid @surface2;
+}
+
+#clock {
+  color: @lavender;
+}
+
+#battery {
+  color: @green;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+#network {
+    color: @flamingo;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#pulseaudio {
+  color: @pink;
+}
+
+#pulseaudio.muted {
+    color: @red;
+}
+
+#custom-power {
+    border-radius: 1rem;
+    color: @red;
+    margin-bottom: 1rem;
+}
+
+#tray {
+  border-radius: 1rem;
+}
+
+tooltip {
+    background: @base;
+    border: 1px solid @pink;
+}
+
+tooltip label {
+    color: @text;
+}
