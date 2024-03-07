@@ -256,6 +256,7 @@ alias cd='z'
 alias qq='nvim $(find ~/.config/nvim/lua/custom -maxdepth 3 -type f | fzf)'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+bindkey -v
 # wal -rqxt
 
 # Pokemon 
