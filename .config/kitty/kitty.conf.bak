@@ -1193,6 +1193,6 @@ macos_thicken_font 0.3
 
 
 # BEGIN_KITTY_THEME
-# Tokyo Night
+# Atom
 include current-theme.conf
 # END_KITTY_THEME

@@ -18,6 +18,8 @@ monitor = "kitty -e bpytop"
 notetaker = "/home/kshitij/.scripts/note-taker"
 notetopdf = "/home/kshitij/.scripts/note-to-pdf"
 
+notes = "logseq"
+
 
 @hook.subscribe.startup_once
 def autostart():
@@ -54,6 +56,7 @@ keys = [
     EK("M-<space>", lazy.next_layout(), desc="Toggle between layouts"),
     EK("M-n", lazy.spawn(notetaker), desc="Note Taker"),
     EK("M-S-n", lazy.spawn(notetopdf), desc="Note Taker to pdf"),
+    EK("M-l", lazy.spawn(notes), desc="Logseq"),
     # Window Management
     EK("M-q", lazy.window.kill(), desc="Kill focused window"),
     EK("M-<F5>", lazy.restart(), desc="Restart Qtile"),
@@ -109,7 +112,6 @@ keys = [
     EK("M-S-<Up>", lazy.spawn("lux -a 5%")),
     EK("M-S-<Down>", lazy.spawn("lux -s 5%")),
     # Function keys
-    EK("<F3>", lazy.spawn("systemctl suspend")),
     EK("<F6>", lazy.spawn("amixer set Master 5%- unmute")),
     EK("<F7>", lazy.spawn("amixer set Master 5%+ unmute")),
     # EK("<F9>", lazy.spawn("lux -s 5%")),
@@ -144,10 +146,10 @@ layouts = [
     layout.MonadTall(
         fontsize=10,
         margin=8,
-        border_width=1,
+        border_width=2,
         name="Xmonad Tall",
-        border_focus="C74045",
-        single_border_width=0,
+        border_focus="E74045",
+        single_border_width=2,
     ),
     layout.TreeTab(
         active_bg="b00000",
