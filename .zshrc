@@ -2,6 +2,7 @@
 # Set $PATH if ~/.local/bin exist
 if [ -d "$HOME/.local/bin" ]; then
     export PATH=$HOME/.local/bin:$PATH
+    export PATH=$HOME/.scripts/:$PATH
 fi
 if [ -d "$HOME/.cargo/bin" ]; then
     export PATH=$HOME/.cargo/bin:$PATH
