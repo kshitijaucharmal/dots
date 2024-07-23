@@ -240,7 +240,7 @@ alias upd="/usr/bin/update"
 alias ls='exa'
 alias ll='exa -l'
 alias nv='nvim'
-alias ec='nvim $(fd . ~/.config --type f --type l --max-depth 6 --exclude unity3d --exclude unityhub | fzf -i)'
+alias ec='nvim $(fd . ~/dots/.config --type f --type l --max-depth 6 --exclude unity3d --exclude unityhub | fzf -i)'
 alias es='nvim $(fd . ~/.scripts --type f --type l --max-depth 3 --exclude unity3d --exclude unityhub | fzf -i)'
 alias op='. ~/.scripts/open-project'
 alias or='. ~/.scripts/open-repo'
@@ -262,3 +262,5 @@ bindkey -v
 # Pokemon 
 pokemon-colorscripts -r 1 --no-title
 fortune
+
+export PATH="$PATH:/home/kshitij/.local/bin" # Added by Defang install

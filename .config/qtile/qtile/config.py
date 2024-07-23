@@ -20,6 +20,7 @@ notetopdf = "/home/kshitij/.scripts/note-to-pdf"
 
 notes = "logseq"
 
+
 @hook.subscribe.startup_once
 def autostart():
     home = os.path.expanduser("~/.config/qtile/autostart.sh")
